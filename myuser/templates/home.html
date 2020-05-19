@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="center">
+        <button class="button"><a href="{% url 'homepage'%}">Home</a></button>
+        <button class="button"><a href="{% url 'loginview'%}">LOGIN</a></button>
+        <button class="button"><a href="{% url 'signup'%}">SINGUP</a></button>
+    </div>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="center">
+        <button class="button"><a href="{% url 'logoutview'%}">LOGOUT</a></button>
+    </div>
+    {% if user.is_authenticated %}
+        <h4>Username: {{ user.username }}</h4>
+        <h4>Display Name: {{user.displayname}}</h4>
+        <h4>AUTH_USER_MODEL: {{data}}</h4>
+    {% endif %}
+{% endblock %}
